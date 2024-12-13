@@ -1,0 +1,5 @@
+package com.test.service.shuffle.service;
+
+public interface MessagePublisher {
+    <T> void publish(String topic, String key, T message);
+}
